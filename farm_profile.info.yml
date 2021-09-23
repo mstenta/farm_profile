@@ -2,6 +2,5 @@ name: farmOS Profile
 type: module
 description: 'Provides a profile entity.'
 package: farmOS Contrib
-core: 8.x
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^9
 configure: entity.profile_type.collection
