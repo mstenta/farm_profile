@@ -1,0 +1,14 @@
+administer profile types:
+  title: 'Administer profile types'
+  description: 'Maintain the types of profile entity.'
+  restrict access: true
+access profile overview:
+  title: 'Access profile overview page'
+delete profile:
+  title: Delete profile
+create profile:
+  title: Create profile
+view profile:
+  title: View profile
+edit profile:
+  title: Edit profile

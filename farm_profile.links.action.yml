@@ -1,0 +1,11 @@
+profile.type_add:
+  route_name: entity.profile_type.add_form
+  title: 'Add profile type'
+  appears_on:
+    - entity.profile_type.collection
+
+profile.add_page:
+  route_name: entity.profile.add_page
+  title: 'Add profile'
+  appears_on:
+    - entity.profile.collection

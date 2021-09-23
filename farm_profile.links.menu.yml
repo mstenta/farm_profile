@@ -1,0 +1,5 @@
+entity.profile_type.collection:
+  title: 'Profile types'
+  parent: system.admin_structure
+  description: 'Manage and CRUD actions on Profile type.'
+  route_name: entity.profile_type.collection
