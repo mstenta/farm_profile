@@ -1,0 +1,12 @@
+{
+    "name": "mstenta/farm_profile",
+    "description": "Provides a profile entity.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Michael Stenta",
+          "email": "mike@farmier.com"
+        }
+    ]
+}
