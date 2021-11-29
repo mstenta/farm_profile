@@ -1,6 +1,6 @@
 # farmOS Profile
 
-Provides a profile entity for farmOS.
+Provides a farmOS profile entity for farm-level information.
 
 ## Installation
 

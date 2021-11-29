@@ -1,6 +1,6 @@
 {
     "name": "mstenta/farm_profile",
-    "description": "Provides a profile entity.",
+    "description": "Provides a profile entity for farm-level information.",
     "type": "drupal-module",
     "license": "GPL-2.0-or-later",
     "authors": [
