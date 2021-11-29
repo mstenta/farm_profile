@@ -8,9 +8,5 @@
             "name": "Michael Stenta",
             "email": "mike@farmier.com"
         }
-    ],
-    "require": {
-        "drupal/address": "^1.9",
-        "drupal/json_field": "^1.0@RC"
-    }
+    ]
 }
