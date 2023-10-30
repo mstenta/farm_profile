@@ -16,13 +16,13 @@ class ProfileForm extends ContentEntityForm {
   public function save(array $form, FormStateInterface $form_state) {
 
     $entity = $this->getEntity();
-    $result = $entity->save();
+    $status = $entity->save();
     $link = $entity->toLink($this->t('View'))->toRenderable();
 
     $message_arguments = ['%label' => $this->entity->label()];
     $logger_arguments = $message_arguments + ['link' => render($link)];
 
-    if ($result == SAVED_NEW) {
+    if ($status == SAVED_NEW) {
       $this->messenger()->addStatus($this->t('New profile %label has been created.', $message_arguments));
       $this->logger('farm_profile')->notice('Created new profile %label', $logger_arguments);
     }
@@ -32,6 +32,8 @@ class ProfileForm extends ContentEntityForm {
     }
 
     $form_state->setRedirect('entity.profile.canonical', ['profile' => $entity->id()]);
+
+    return $status;
   }
 
 }
