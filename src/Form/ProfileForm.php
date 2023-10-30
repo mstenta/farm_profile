@@ -17,18 +17,16 @@ class ProfileForm extends ContentEntityForm {
 
     $entity = $this->getEntity();
     $status = $entity->save();
-    $link = $entity->toLink($this->t('View'))->toRenderable();
 
     $message_arguments = ['%label' => $this->entity->label()];
-    $logger_arguments = $message_arguments + ['link' => render($link)];
 
     if ($status == SAVED_NEW) {
       $this->messenger()->addStatus($this->t('New profile %label has been created.', $message_arguments));
-      $this->logger('farm_profile')->notice('Created new profile %label', $logger_arguments);
+      $this->logger('farm_profile')->notice('Created new profile %label', $message_arguments);
     }
     else {
       $this->messenger()->addStatus($this->t('The profile %label has been updated.', $message_arguments));
-      $this->logger('farm_profile')->notice('Updated new profile %label.', $logger_arguments);
+      $this->logger('farm_profile')->notice('Updated new profile %label.', $message_arguments);
     }
 
     $form_state->setRedirect('entity.profile.canonical', ['profile' => $entity->id()]);
