@@ -73,6 +73,7 @@ class ProfileTypeForm extends BundleEntityFormBase {
     $status = $entity_type->save();
 
     $t_args = ['%name' => $entity_type->label()];
+    $message = '';
     if ($status == SAVED_UPDATED) {
       $message = $this->t('The profile type %name has been updated.', $t_args);
     }
