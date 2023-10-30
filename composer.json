@@ -8,5 +8,8 @@
             "name": "Michael Stenta",
             "email": "mike@farmier.com"
         }
-    ]
+    ],
+    "require": {
+        "farmos/farmos": "^2 || ^3"
+    }
 }
